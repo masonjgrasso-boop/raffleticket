@@ -4,9 +4,16 @@ import { BottomNav } from './components/BottomNav';
 import { AssignTickets } from './screens/AssignTickets';
 import { FindWinners } from './screens/FindWinners';
 import { ViewAssignments } from './screens/ViewAssignments';
+import { PinGate } from './screens/PinGate';
+import { isPinVerified } from './utils/storage';
 
 export default function App() {
+  const [pinOk, setPinOk] = useState(isPinVerified);
   const [screen, setScreen] = useState<Screen>('assign');
+
+  if (!pinOk) {
+    return <PinGate onSuccess={() => setPinOk(true)} />;
+  }
 
   return (
     <div className="flex flex-col min-h-dvh max-w-lg mx-auto">
