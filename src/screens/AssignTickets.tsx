@@ -57,7 +57,7 @@ export function AssignTickets() {
         <div className="max-w-md mx-auto">
           <div className="bg-white rounded-2xl shadow-sm p-6 mt-4">
             <div className="text-center mb-6">
-              <div className="text-4xl mb-2">🎟️</div>
+              <img src="/kids-chance-logo.jpg" alt="Kids' Chance" className="h-16 w-auto mx-auto mb-2 rounded-xl" />
               <h1 className="text-xl font-bold text-kc-blue">Kids' Chance Raffle</h1>
               <p className="text-gray-500 text-sm mt-1">Set the starting ticket number to begin</p>
             </div>

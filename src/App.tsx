@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-dvh max-w-lg mx-auto">
       <header className="bg-white border-b border-gray-200 px-4 py-2 flex items-center gap-3 shadow-sm">
-        <img src="/kids-chance-logo.jpg" alt="Kids' Chance" className="h-10 w-auto" />
+        <img src="/kids-chance-logo.jpg" alt="Kids' Chance" className="h-10 w-auto rounded-xl" />
         <div>
           <p className="text-xs text-gray-500 leading-tight">Cornhole Tournament Raffle</p>
         </div>

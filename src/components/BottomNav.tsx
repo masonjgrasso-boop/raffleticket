@@ -6,7 +6,7 @@ interface Props {
 }
 
 const tabs: { id: Screen; label: string; icon: string }[] = [
-  { id: 'assign', label: 'Assign', icon: '🎟️' },
+  { id: 'assign', label: 'Assign', icon: '' },
   { id: 'find', label: 'Find Winner', icon: '🔍' },
   { id: 'view', label: 'All Tickets', icon: '📋' },
 ];
@@ -27,7 +27,10 @@ export function BottomNav({ active, onChange }: Props) {
               : 'text-gray-500'
           }`}
         >
-          <span className="text-lg leading-none">{tab.icon}</span>
+          {tab.id === 'assign'
+            ? <img src="/kids-chance-logo.jpg" alt="" className="h-6 w-auto rounded-md" />
+            : <span className="text-lg leading-none">{tab.icon}</span>
+          }
           <span>{tab.label}</span>
         </button>
       ))}

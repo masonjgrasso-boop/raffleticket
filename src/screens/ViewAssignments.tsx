@@ -38,7 +38,7 @@ export function ViewAssignments() {
         {/* Assignment list */}
         {sorted.length === 0 ? (
           <div className="text-center py-16 text-gray-400">
-            <div className="text-4xl mb-3">🎟️</div>
+            <img src="/kids-chance-logo.jpg" alt="Kids' Chance" className="h-16 w-auto mx-auto mb-3 rounded-xl" />
             <p className="text-sm">No tickets assigned yet.</p>
             <p className="text-sm">Go to the Assign tab to get started.</p>
           </div>

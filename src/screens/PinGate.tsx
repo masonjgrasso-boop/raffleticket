@@ -38,7 +38,7 @@ export function PinGate({ onSuccess }: PinGateProps) {
         className={`w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden ${shake ? 'animate-shake' : ''}`}
       >
         <div className="bg-white border-b border-gray-200 px-6 py-5 text-center flex flex-col items-center gap-2">
-          <img src="/kids-chance-logo.jpg" alt="Kids' Chance" className="h-14 w-auto" />
+          <img src="/kids-chance-logo.jpg" alt="Kids' Chance" className="h-14 w-auto rounded-xl" />
           <p className="text-sm text-gray-500">Volunteer Access</p>
         </div>
 
