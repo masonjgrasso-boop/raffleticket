@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kc-blue: #1B4F9B;
+  --color-kc-green: #3DAE2B;
+  --color-kc-blue-light: #E8F0FB;
+  --color-kc-green-light: #EAF7E8;
+}
+
+/* Prevent iOS Safari input zoom */
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
+
+/* Safe area padding for notch devices */
+body {
+  margin: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: #f3f4f6;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
